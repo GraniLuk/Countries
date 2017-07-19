@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<Countries xmlns:bk="urn:samples">
+ <Country>
+	<Id>1</Id>
+    <Name>Poland</Name>
+    <Capital>Warsaw</Capital>
+    <Currency>PLN</Currency>
+ </Country>
+ <Country>
+	<Id>2</Id>
+    <Name>England</Name>
+    <Capital>London</Capital>
+    <Currency>GBP</Currency>
+ </Country>
+ <Country>
+	<Id>3</Id>
+    <Name>Germany</Name>
+    <Capital>Berlin</Capital>
+    <Currency>EUR</Currency>
+ </Country>
+ <Country>
+	<Id>4</Id>
+    <Name>Spain</Name>
+    <Capital>Madrid</Capital>
+    <Currency>EUR</Currency>
+ </Country>
+</Countries>

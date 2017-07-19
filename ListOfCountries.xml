@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<Countries>
+ <Country>
+    <Name>Poland</Name>
+    <Capital>Warsaw</Capital>
+    <Currency>PLN</Currency>
+ </Country>
+ <Country>
+    <Name>England</Name>
+    <Capital>London</Capital>
+    <Currency>GBP</Currency>
+ </Country>
+ <Country>
+    <Name>Germany</Name>
+    <Capital>Berlin</Capital>
+    <Currency>EUR</Currency>
+ </Country>
+ <Country>
+    <Name>Spain</Name>
+    <Capital>Madrid</Capital>
+    <Currency>EUR</Currency>
+ </Country>
+</Countries>
