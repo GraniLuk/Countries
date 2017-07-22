@@ -15,7 +15,7 @@ namespace Countries.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your application Value page.";
 
             return View();
         }

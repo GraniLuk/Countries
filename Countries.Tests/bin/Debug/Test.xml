@@ -4,9 +4,9 @@
  <details display="1" /> 
    <charge display="1" /> 
    <features> 
-     <feature code="HAZ" description="CARGO" /> 
-     <feature code="IDL" description="DELIVERY" /> 
-    <feature code="LFT" description="TRUCK" /> 
-     <feature code="NFY" description="CARRIER CHARGE" />
+     <feature Name="HAZ" Value="CARGO" /> 
+     <feature Name="IDL" Value="DELIVERY" /> 
+    <feature Name="LFT" Value="TRUCK" /> 
+     <feature Name="NFY" Value="CARRIER CHARGE" />
   </features> 
 </settings>

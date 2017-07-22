@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.IO;
 using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace Countries.Models
 {
@@ -63,97 +64,38 @@ namespace Countries.Models
 
 
     /// <remarks/>
-    [System.SerializableAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class Countries
+    [SerializableAttribute(), System.ComponentModel.DesignerCategoryAttribute("Name"),
+     XmlTypeAttribute(AnonymousType = true), XmlRootAttribute(Namespace = "", IsNullable = false)]
+    public class Countries
     {
 
         private CountriesCountry[] countryField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Country")]
-        public CountriesCountry[] Country
-        {
-            get
-            {
-                return this.countryField;
-            }
-            set
-            {
-                this.countryField = value;
-            }
-        }
+        [System.Xml.Serialization.XmlElement("Country")]
+        public CountriesCountry[] Country { get; set; }
+
     }
 
     /// <remarks/>
-    [System.SerializableAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class CountriesCountry
+    [SerializableAttribute(), System.ComponentModel.DesignerCategoryAttribute("Name"),
+     XmlTypeAttribute(AnonymousType = true)]
+    public class CountriesCountry
     {
+        public byte Id { get; set; }
 
-        private byte idField;
+        public string Name { get; set; }
 
-        private string nameField;
-
-        private string capitalField;
-
-        private string currencyField;
-
-        /// <remarks/>
-        public byte Id
-        {
-            get
-            {
-                return this.idField;
-            }
-            set
-            {
-                this.idField = value;
-            }
-        }
-
-        /// <remarks/>
-        public string Name
-        {
-            get
-            {
-                return this.nameField;
-            }
-            set
-            {
-                this.nameField = value;
-            }
-        }
-
-        /// <remarks/>
-        public string Capital
-        {
-            get
-            {
-                return this.capitalField;
-            }
-            set
-            {
-                this.capitalField = value;
-            }
-        }
-
-        /// <remarks/>
-        public string Currency
-        {
-            get
-            {
-                return this.currencyField;
-            }
-            set
-            {
-                this.currencyField = value;
-            }
-        }
+        [XmlArray("Details")]
+        [XmlArrayItem("Detail")]
+        public List<Detail> Details { get; set; }
     }
 
-
+    public class Detail
+    {
+        [XmlAttribute]
+        public string Name { get; set; }
+        [XmlAttribute]
+        public string Value { get; set; }
+    }
 }

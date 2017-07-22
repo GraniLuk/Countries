@@ -17,9 +17,14 @@ namespace Countries.Controllers
         public ActionResult Index()
         {
             var countries = new CountriesList();
-            XmlSerializer deserializer = new XmlSerializer(typeof(Models.Countries), new XmlRootAttribute("root"));
-            var objectValue = deserializer.Deserialize(new StringReader(System.Web.HttpContext.Current.Server.MapPath("~/Content/ListOfCountries.xml")));
+            LoadCountries(System.Web.HttpContext.Current.Server.MapPath("~/Content/ListOfCountries.xml"));
             return View(countries);
+        }
+
+        public static Models.Countries LoadCountries(string filePath)
+        {
+            XmlSerializer deserializer = new XmlSerializer(typeof(Models.Countries), new XmlRootAttribute("Countries"));
+            return deserializer.Deserialize(new StringReader(filePath)) as Models.Countries;
         }
 
         // GET: Country/Details/5

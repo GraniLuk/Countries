@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<Countries xmlns:bk="urn:samples">
+ <Country>
+	<Id>1</Id>
+    <Name>Poland</Name>
+	<Details>
+	 <Detail Name="Capital" Value="Warsaw" /> 
+	 <Detail Name="Currency" Value="PLN" /> 
+	</Details>
+	<features> 
+     <feature Name="Capital" Value="Warsaw" /> 
+     <feature Name="IDL" Value="DELIVERY" /> 
+    <feature Name="LFT" Value="TRUCK" /> 
+     <feature Name="NFY" Value="CARRIER CHARGE" />
+  </features> 
+ </Country>
+ <Country>
+	<Id>2</Id>
+    <Name>England</Name>
+	<Details>
+	 <Detail Name="Capital" Value="London" /> 
+	 <Detail Name="Currency" Value="GBP" /> 
+	</Details>
+ </Country>
+ <Country>
+	<Id>3</Id>
+    <Name>Germany</Name>
+	<Details>
+	 <Detail Name="Capital" Value="Berlin" /> 
+	 <Detail Name="Currency" Value="EUR" /> 
+	</Details>
+ </Country>
+ <Country>
+	<Id>4</Id>
+    <Name>Spain</Name>
+	<Details>
+	 <Detail Name="Capital" Value="Madrid" /> 
+	 <Detail Name="Currency" Value="EUR" /> 
+	</Details>
+ </Country>
+</Countries>

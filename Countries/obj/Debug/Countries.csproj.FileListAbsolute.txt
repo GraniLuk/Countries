@@ -80,7 +80,6 @@ c:\users\lgranica\documents\visual studio 2015\Projects\Countries\Countries\bin\
 c:\users\lgranica\documents\visual studio 2015\Projects\Countries\Countries\obj\Debug\Countries.csprojResolveAssemblyReference.cache
 c:\users\lgranica\documents\visual studio 2015\Projects\Countries\Countries\obj\Debug\Countries.dll
 c:\users\lgranica\documents\visual studio 2015\Projects\Countries\Countries\obj\Debug\Countries.pdb
-C:\Users\grani\Source\Repos\Countries\Countries\obj\Debug\Countries.csprojResolveAssemblyReference.cache
 C:\Users\grani\Source\Repos\Countries\Countries\bin\ApplicationInsights.config
 C:\Users\grani\Source\Repos\Countries\Countries\bin\roslyn\csc.exe
 C:\Users\grani\Source\Repos\Countries\Countries\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll

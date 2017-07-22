@@ -37,7 +37,7 @@ namespace Countries.Tests
 
             var firstFeature = objectValue.features.FirstOrDefault();
 
-            Assert.AreEqual("HAZ", firstFeature.code);
+            Assert.AreEqual("HAZ", firstFeature.Name);
 
 
         }
@@ -63,7 +63,7 @@ namespace Countries.Tests
     public class Feature
     {
         [XmlAttribute]
-        public string code { get; set; }
+        public string Name { get; set; }
         [XmlAttribute]
         public string description { get; set; }
     }
