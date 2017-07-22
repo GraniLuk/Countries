@@ -2,10 +2,12 @@
 using Countries.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace Countries.Controllers
 {
@@ -15,6 +17,8 @@ namespace Countries.Controllers
         public ActionResult Index()
         {
             var countries = new CountriesList();
+            XmlSerializer deserializer = new XmlSerializer(typeof(Models.Countries), new XmlRootAttribute("root"));
+            var objectValue = deserializer.Deserialize(new StringReader(System.Web.HttpContext.Current.Server.MapPath("~/Content/ListOfCountries.xml")));
             return View(countries);
         }
 

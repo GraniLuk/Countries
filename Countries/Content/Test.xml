@@ -1,0 +1,11 @@
+<settings>   
+  <calculator display="1" />
+  <details display="1" />
+  <charge display="1" />
+  <features>
+    <feature code="HAZ" description="CARGO" />
+    <feature code="IDL" description="DELIVERY" />
+    <feature code="LFT" description="TRUCK" />
+    <feature code="NFY" description="CARRIER CHARGE" />
+  </features>
+</settings>

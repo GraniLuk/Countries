@@ -1,0 +1,9 @@
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Countries.Tests.dll
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Countries.Tests.pdb
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\nunit.framework.dll
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\nunit.framework.xml
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\obj\Debug\Countries.Tests.xmlFiles.resources
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\obj\Debug\Countries.Tests.csproj.GenerateResource.Cache
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\obj\Debug\Countries.Tests.dll
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\obj\Debug\Countries.Tests.pdb
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Test.xml
