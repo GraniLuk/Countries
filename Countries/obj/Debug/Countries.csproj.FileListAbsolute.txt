@@ -121,6 +121,7 @@ C:\Users\grani\Source\Repos\Countries\Countries\bin\Microsoft.Owin.Security.OAut
 C:\Users\grani\Source\Repos\Countries\Countries\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\grani\Source\Repos\Countries\Countries\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\grani\Source\Repos\Countries\Countries\bin\Newtonsoft.Json.dll
+C:\Users\grani\Source\Repos\Countries\Countries\bin\nunit.framework.dll
 C:\Users\grani\Source\Repos\Countries\Countries\bin\Owin.dll
 C:\Users\grani\Source\Repos\Countries\Countries\bin\System.Web.Helpers.dll
 C:\Users\grani\Source\Repos\Countries\Countries\bin\System.Web.Mvc.dll
@@ -136,6 +137,7 @@ C:\Users\grani\Source\Repos\Countries\Countries\bin\Microsoft.AI.Web.xml
 C:\Users\grani\Source\Repos\Countries\Countries\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\grani\Source\Repos\Countries\Countries\bin\Microsoft.ApplicationInsights.xml
 C:\Users\grani\Source\Repos\Countries\Countries\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\grani\Source\Repos\Countries\Countries\bin\nunit.framework.xml
 C:\Users\grani\Source\Repos\Countries\Countries\bin\System.Web.Helpers.xml
 C:\Users\grani\Source\Repos\Countries\Countries\bin\System.Web.Mvc.xml
 C:\Users\grani\Source\Repos\Countries\Countries\bin\System.Web.Optimization.xml
@@ -161,5 +163,4 @@ C:\Users\grani\Source\Repos\Countries\Countries\bin\Microsoft.Owin.Security.Twit
 C:\Users\grani\Source\Repos\Countries\Countries\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\grani\Source\Repos\Countries\Countries\obj\Debug\Countries.dll
 C:\Users\grani\Source\Repos\Countries\Countries\obj\Debug\Countries.pdb
-C:\Users\grani\Source\Repos\Countries\Countries\bin\nunit.framework.dll
-C:\Users\grani\Source\Repos\Countries\Countries\bin\nunit.framework.xml
+C:\Users\grani\Source\Repos\Countries\Countries\obj\Debug\Countries.csprojResolveAssemblyReference.cache

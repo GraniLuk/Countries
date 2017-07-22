@@ -1,30 +1,28 @@
 ﻿using Countries.Models;
-using Countries.ViewModels;
-using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Xml.Linq;
 using System.Xml.Serialization;
 
 namespace Countries.Controllers
 {
     public class CountryController : Controller
     {
-        // GET: Country
+        private readonly Models.Countries _countriesList;
+
+        public CountryController()
+        {
+            _countriesList = LoadCountries(System.Web.HttpContext.Current.Server.MapPath("~/Content/ListOfCountries.xml"));
+        }
         public ActionResult Index()
         {
-            var countries = new CountriesList();
-            LoadCountries(System.Web.HttpContext.Current.Server.MapPath("~/Content/ListOfCountries.xml"));
-            return View(countries);
+            return View(_countriesList);
         }
 
         public static Models.Countries LoadCountries(string filePath)
         {
             XmlSerializer deserializer = new XmlSerializer(typeof(Models.Countries), new XmlRootAttribute("Countries"));
-            return deserializer.Deserialize(new StringReader(filePath)) as Models.Countries;
+            return deserializer.Deserialize(new StreamReader(filePath)) as Models.Countries;
         }
 
         // GET: Country/Details/5
@@ -58,7 +56,7 @@ namespace Countries.Controllers
         // GET: Country/Edit/5
         public ActionResult Edit(int id)
         {
-            var country = new Country(id);
+            var country = _countriesList.Country.FirstOrDefault(x => x.Id == id);
             return View(country);
         }
 
@@ -68,7 +66,7 @@ namespace Countries.Controllers
         {
             try
             {
-                country.doc.Save(HttpContext.Server.MapPath("~/Content/ListOfCountries.xml"));
+                
 
                 return RedirectToAction("Index");
             }

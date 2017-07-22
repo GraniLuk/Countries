@@ -7,12 +7,6 @@
 	 <Detail Name="Capital" Value="Warsaw" /> 
 	 <Detail Name="Currency" Value="PLN" /> 
 	</Details>
-	<features> 
-     <feature Name="Capital" Value="Warsaw" /> 
-     <feature Name="IDL" Value="DELIVERY" /> 
-    <feature Name="LFT" Value="TRUCK" /> 
-     <feature Name="NFY" Value="CARRIER CHARGE" />
-  </features> 
  </Country>
  <Country>
 	<Id>2</Id>

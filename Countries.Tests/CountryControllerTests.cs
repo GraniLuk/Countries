@@ -42,6 +42,17 @@ namespace Countries.Tests
             var poland = countries.Country.FirstOrDefault(x => x.Name == "Poland");
             Assert.NotZero(poland.Details.Count);
         }
+        [Test]
+        public void ForEachCountryDisplayName()
+        {
+            var countries = LoadCountries(_fileName);
+
+            foreach (var country in countries.Country)
+            {
+                Assert.IsNotNull(country.Name);
+            }
+        }
+
 
         public static Models.Countries LoadCountries(string filePath)
         {

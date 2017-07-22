@@ -1,5 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/ContinuousTesting/PersistentDataLocation/@EntryValue">C:\Users\grani\AppData\Local\Temp\JetBrains\ContinuousTesting\42298356-0bf8-4b43-b758-937d051af67e</s:String>
-	<s:String x:Key="/Default/Environment/ContinuousTesting/SnapshotLocation/@EntryValue">C:\Users\grani\AppData\Local\Temp\ssm.Qanuwyk.tmp</s:String>
+	<s:String x:Key="/Default/Environment/ContinuousTesting/SnapshotLocation/@EntryValue">C:\Users\grani\AppData\Local\Temp\ssm.Lelaqem.tmp</s:String>
 	<s:String x:Key="/Default/Environment/ContinuousTesting/Strategy/@EntryValue">RunTests</s:String>
 	<s:String x:Key="/Default/Environment/ContinuousTesting/TriggerMode/@EntryValue">OnBuild</s:String></wpf:ResourceDictionary>

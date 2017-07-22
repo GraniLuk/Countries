@@ -1,12 +1,6 @@
-C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Countries.Tests.dll
-C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Countries.Tests.pdb
-C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\nunit.framework.dll
-C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\nunit.framework.xml
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\obj\Debug\Countries.Tests.csprojResolveAssemblyReference.cache
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\obj\Debug\Countries.Tests.xmlFiles.resources
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\obj\Debug\Countries.Tests.csproj.GenerateResource.Cache
-C:\Users\grani\Source\Repos\Countries\Countries.Tests\obj\Debug\Countries.Tests.dll
-C:\Users\grani\Source\Repos\Countries\Countries.Tests\obj\Debug\Countries.Tests.pdb
-C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Test.xml
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\ApplicationInsights.config
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\roslyn\csc.exe
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -22,8 +16,12 @@ C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\roslyn\VBCSCompi
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\xmlFiles.resx
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\xmlFiles.Designer.cs
-C:\Users\grani\Source\Repos\Countries\Countries.Tests\obj\Debug\Countries.Tests.csprojResolveAssemblyReference.cache
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Test.xml
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\ListOfCountries.xml
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Countries.Tests.dll
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Countries.Tests.pdb
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Countries.dll
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\nunit.framework.dll
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\System.Web.Mvc.dll
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Microsoft.Owin.dll
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\System.Web.Optimization.dll
@@ -38,6 +36,7 @@ C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Microsoft.Owin.H
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Countries.pdb
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Countries.dll.config
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\nunit.framework.xml
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\System.Web.Mvc.xml
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Microsoft.Owin.xml
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\System.Web.Optimization.xml
@@ -48,4 +47,5 @@ C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Microsoft.Owin.S
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\EntityFramework.xml
 C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\grani\Source\Repos\Countries\Countries.Tests\bin\Debug\ListOfCountries.xml
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\obj\Debug\Countries.Tests.dll
+C:\Users\grani\Source\Repos\Countries\Countries.Tests\obj\Debug\Countries.Tests.pdb

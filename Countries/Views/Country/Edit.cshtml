@@ -22,19 +22,26 @@
                 @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
             </div>
         </div>
-        @foreach (var field in Model.Fields)
+        @*@foreach (var field in Model.Details)
         {
             <div class="form-group">
-                @Html.Label(field.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                @Html.LabelFor(model => field.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => field.Name, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+        }*@
+        @foreach (var field in Model.Details)
+        {
+         
                 <div class="col-md-10">
                     @Html.EditorFor(model => field.Value, new { htmlAttributes = new { @class = "form-control" } })
                 </div>
-            </div>
+          
         }
 
-        @Html.HiddenFor(model => model.Id)
-        @Html.HiddenFor(model => model.Fields);
-        @Html.HiddenFor(model => model.doc);
+        @Html.HiddenFor(model => Model.Id)
+        @Html.HiddenFor(m=>m.Details)
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Save" class="btn btn-default" />

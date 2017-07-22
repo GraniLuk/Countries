@@ -9,17 +9,15 @@ using System.Xml.Serialization;
 
 namespace Countries.Models
 {
-
     /// <remarks/>
     [SerializableAttribute(), System.ComponentModel.DesignerCategoryAttribute("Name"),
      XmlTypeAttribute(AnonymousType = true), XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public class Countries
+    public class CountriesList
     {
-
         /// <remarks/>
-        [System.Xml.Serialization.XmlElement("Country")]
-        public Country[] Country { get; set; }
-
+        [XmlArray("CountriesList")]
+        [XmlArrayItem("Country")]
+        public List<Country> Countries { get; set; }
     }
 
     /// <remarks/>
@@ -27,10 +25,6 @@ namespace Countries.Models
      XmlTypeAttribute(AnonymousType = true)]
     public class Country
     {
-        public Country()
-        {
-                
-        }
         public byte Id { get; set; }
 
         public string Name { get; set; }
