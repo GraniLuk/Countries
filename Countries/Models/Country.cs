@@ -37,7 +37,7 @@ namespace Countries.Models
 
         [XmlArray("Details")]
         [XmlArrayItem("Detail")]
-        public List<Detail> Details { get; set; }
+        public List<Detail> Details { get; set; } = new List<Detail>();
     }
 
     public class Detail

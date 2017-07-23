@@ -22,26 +22,29 @@
                 @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
             </div>
         </div>
-        @*@foreach (var field in Model.Details)
+        @for (int i = 0; i < Model.Details.Count; i++)
         {
             <div class="form-group">
-                @Html.LabelFor(model => field.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                @Html.LabelFor(m => m.Details[i].Name, Model.Details[0].Name,new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.EditorFor(model => field.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.EditorFor(m => m.Details[i].Value, new { htmlAttributes = new { @class = "form-control" } })
                 </div>
             </div>
-        }*@
-        @foreach (var field in Model.Details)
+            @Html.HiddenFor(m => m.Details[i].Name)
+            @Html.HiddenFor(m => m.Details[i].Value)
+        }
+  
+        @*@foreach (var field in Model.Details)
         {
          
                 <div class="col-md-10">
-                    @Html.EditorFor(model => field.Value, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.TextBoxFor(model => field.Value, new { htmlAttributes = new { @class = "form-control" } })
                 </div>
           
-        }
+        }*@
+  
 
         @Html.HiddenFor(model => Model.Id)
-        @Html.HiddenFor(m=>m.Details)
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Save" class="btn btn-default" />

@@ -24,13 +24,13 @@ namespace Countries.Tests
         [Test]
         public void LoadCountriesTest()
         {
-            var countries = LoadCountries(_fileName);
+            var countries = CountryController.LoadCountries(_fileName);
             Assert.IsNotNull(countries);
         }
         [Test]
         public void LoadCountriesCheckCountriesList()
         {
-            var countries = LoadCountries(_fileName);
+            var countries = CountryController.LoadCountries(_fileName);
             var poland = countries.Country.FirstOrDefault(x => x.Name == "Poland");
             Assert.IsNotNull(poland);
         }
@@ -38,28 +38,20 @@ namespace Countries.Tests
         [Test]
         public void LoadCountriesCheckCountryDetailsNotNull()
         {
-            var countries = LoadCountries(_fileName);
+            var countries = CountryController.LoadCountries(_fileName);
             var poland = countries.Country.FirstOrDefault(x => x.Name == "Poland");
             Assert.NotZero(poland.Details.Count);
         }
         [Test]
         public void ForEachCountryDisplayName()
         {
-            var countries = LoadCountries(_fileName);
+            var countries = CountryController.LoadCountries(_fileName);
 
             foreach (var country in countries.Country)
             {
                 Assert.IsNotNull(country.Name);
             }
         }
-
-
-        public static Models.Countries LoadCountries(string filePath)
-        {
-            XmlSerializer deserializer = new XmlSerializer(typeof(Models.Countries), new XmlRootAttribute("Countries"));
-            return deserializer.Deserialize(new StreamReader(filePath)) as Models.Countries;
-        }
-
 
     }
 }
