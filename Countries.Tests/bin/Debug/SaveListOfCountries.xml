@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><Countries xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Country><Id>1</Id><Name>Poland</Name><Details><Detail Name="Capitol" Value="Warsaw" /></Details></Country><Country><Id>2</Id><Name>England</Name><Details><Detail Name="Capitol" Value="London" /></Details></Country></Countries>

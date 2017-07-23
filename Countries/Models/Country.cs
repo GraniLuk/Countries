@@ -9,19 +9,6 @@ using System.Xml.Serialization;
 
 namespace Countries.Models
 {
-
-    /// <remarks/>
-    [Serializable(),
-     XmlType(AnonymousType = true), XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public class Countries
-    {
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElement(nameof(Country))]
-        public Country[] Country { get; set; }
-
-    }
-
     /// <remarks/>
     [Serializable(),
      XmlType(AnonymousType = true)]
@@ -34,13 +21,5 @@ namespace Countries.Models
         [XmlArray(nameof(Details))]
         [XmlArrayItem(nameof(Detail))]
         public List<Detail> Details { get; set; } = new List<Detail>();
-    }
-
-    public class Detail
-    {
-        [XmlAttribute]
-        public string Name { get; set; }
-        [XmlAttribute]
-        public string Value { get; set; }
     }
 }

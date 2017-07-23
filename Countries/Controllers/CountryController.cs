@@ -1,4 +1,5 @@
-﻿using Countries.Models;
+﻿using System;
+using Countries.Models;
 using System.IO;
 using System.Linq;
 using System.Web.Mvc;
@@ -11,19 +12,16 @@ namespace Countries.Controllers
     {
         private readonly Models.Countries _countriesList;
 
+        private readonly string _filePath = 
+            System.Web.HttpContext.Current.Server.MapPath("~/Content/ListOfCountries.xml");
+
         public CountryController()
         {
-            _countriesList = LoadCountries(System.Web.HttpContext.Current.Server.MapPath("~/Content/ListOfCountries.xml"));
+            _countriesList = Models.Countries.Load(_filePath);
         }
         public ActionResult Index()
         {
             return View(_countriesList);
-        }
-
-        public static Models.Countries LoadCountries(string filePath)
-        {
-            XmlSerializer deserializer = new XmlSerializer(typeof(Models.Countries), new XmlRootAttribute(nameof(Models.Countries)));
-            return deserializer.Deserialize(new StreamReader(filePath)) as Models.Countries;
         }
 
         // GET: Country/Details/5
@@ -44,6 +42,7 @@ namespace Countries.Controllers
         {
             try
             {
+               
                 // TODO: Add insert logic here
 
                 return RedirectToAction("Index");
@@ -67,11 +66,13 @@ namespace Countries.Controllers
         {
             try
             {
-                
+                var indexToReplace = _countriesList.FindCountryIndexById(country.Id);
+                _countriesList.Country[indexToReplace] = country;
+                Models.Countries.Save(_filePath, _countriesList);
 
                 return RedirectToAction("Index");
             }
-            catch
+            catch (Exception exception)
             {
                 return View();
             }

@@ -11,7 +11,7 @@ namespace Countries.Tests
 {
 
     [TestFixture]
-    public class CountryControllerTests
+    public class CountriesLoadTests
     {
         private string _fileName;
         [SetUp]
@@ -24,13 +24,13 @@ namespace Countries.Tests
         [Test]
         public void LoadCountriesTest()
         {
-            var countries = CountryController.LoadCountries(_fileName);
+            var countries = Models.Countries.Load(_fileName);
             Assert.IsNotNull(countries);
         }
         [Test]
         public void LoadCountriesCheckCountriesList()
         {
-            var countries = CountryController.LoadCountries(_fileName);
+            var countries = Models.Countries.Load(_fileName);
             var poland = countries.Country.FirstOrDefault(x => x.Name == "Poland");
             Assert.IsNotNull(poland);
         }
@@ -38,14 +38,14 @@ namespace Countries.Tests
         [Test]
         public void LoadCountriesCheckCountryDetailsNotNull()
         {
-            var countries = CountryController.LoadCountries(_fileName);
+            var countries = Models.Countries.Load(_fileName);
             var poland = countries.Country.FirstOrDefault(x => x.Name == "Poland");
             Assert.NotZero(poland.Details.Count);
         }
         [Test]
         public void ForEachCountryDisplayName()
         {
-            var countries = CountryController.LoadCountries(_fileName);
+            var countries = Models.Countries.Load(_fileName);
 
             foreach (var country in countries.Country)
             {
