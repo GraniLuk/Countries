@@ -7,12 +7,8 @@ namespace Countries.Models
 {
     [Serializable(),
      XmlType(AnonymousType = true), XmlRoot(Namespace = "", IsNullable = false)]
-    public class Countries
+    public class Countries : ICountries
     {
-        public Countries()
-        {
-                
-        }
         [XmlElement(nameof(Country))]
         public Country[] Country { get; set; }
 
@@ -31,7 +27,7 @@ namespace Countries.Models
            
         }
 
-        public static void Save(string filePath, Countries countries)
+        public static void Save(string filePath, ICountries countries)
         {
             var serializer = new XmlSerializer(typeof(Countries), new XmlRootAttribute(nameof(Countries)));
             using (var sww = new StreamWriter(filePath))

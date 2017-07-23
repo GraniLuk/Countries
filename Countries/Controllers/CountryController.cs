@@ -10,7 +10,7 @@ namespace Countries.Controllers
 {
     public class CountryController : Controller
     {
-        private readonly Models.Countries _countriesList;
+        private readonly ICountries _countriesList;
 
         private readonly string _filePath = 
             System.Web.HttpContext.Current.Server.MapPath("~/Content/ListOfCountries.xml");
@@ -70,9 +70,9 @@ namespace Countries.Controllers
                 _countriesList.Country[indexToReplace] = country;
                 Models.Countries.Save(_filePath, _countriesList);
 
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
             }
-            catch (Exception exception)
+            catch
             {
                 return View();
             }
