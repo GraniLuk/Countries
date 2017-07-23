@@ -11,32 +11,28 @@ namespace Countries.Models
 {
 
     /// <remarks/>
-    [SerializableAttribute(), System.ComponentModel.DesignerCategoryAttribute("Name"),
-     XmlTypeAttribute(AnonymousType = true), XmlRootAttribute(Namespace = "", IsNullable = false)]
+    [Serializable(),
+     XmlType(AnonymousType = true), XmlRootAttribute(Namespace = "", IsNullable = false)]
     public class Countries
     {
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElement("Country")]
+        [System.Xml.Serialization.XmlElement(nameof(Country))]
         public Country[] Country { get; set; }
 
     }
 
     /// <remarks/>
-    [SerializableAttribute(), System.ComponentModel.DesignerCategoryAttribute("Name"),
-     XmlTypeAttribute(AnonymousType = true)]
+    [Serializable(),
+     XmlType(AnonymousType = true)]
     public class Country
     {
-        public Country()
-        {
-                
-        }
         public byte Id { get; set; }
 
         public string Name { get; set; }
 
-        [XmlArray("Details")]
-        [XmlArrayItem("Detail")]
+        [XmlArray(nameof(Details))]
+        [XmlArrayItem(nameof(Detail))]
         public List<Detail> Details { get; set; } = new List<Detail>();
     }
 

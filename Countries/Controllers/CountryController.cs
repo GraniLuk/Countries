@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Web.Mvc;
 using System.Xml.Serialization;
+using Countries = Countries.Models.Countries;
 
 namespace Countries.Controllers
 {
@@ -21,7 +22,7 @@ namespace Countries.Controllers
 
         public static Models.Countries LoadCountries(string filePath)
         {
-            XmlSerializer deserializer = new XmlSerializer(typeof(Models.Countries), new XmlRootAttribute("Countries"));
+            XmlSerializer deserializer = new XmlSerializer(typeof(Models.Countries), new XmlRootAttribute(nameof(Models.Countries)));
             return deserializer.Deserialize(new StreamReader(filePath)) as Models.Countries;
         }
 
